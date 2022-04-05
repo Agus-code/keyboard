@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/21b30536b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="panel">
+      <p id="panel_txt"></p>
+    </div>
+    <div class="keyboard" id="keyboard">
+      <div class="row">
+        <button class="key normal-key" id="`~">
+          <div class="key-content">
+            <span class="normal-key-symbol">~</span
+            ><span class="normal-key-symbol">`</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="1!">
+          <div class="key-content">
+            <span class="normal-key-symbol">!</span
+            ><span class="normal-key-symbol">1</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="2@">
+          <div class="key-content">
+            <span class="normal-key-symbol">@</span
+            ><span class="normal-key-symbol">2</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="3#">
+          <div class="key-content">
+            <span class="normal-key-symbol">#</span
+            ><span class="normal-key-symbol">3</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="4$">
+          <div class="key-content">
+            <span class="normal-key-symbol">$</span
+            ><span class="normal-key-symbol">4</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="5%">
+          <div class="key-content">
+            <span class="normal-key-symbol">%</span
+            ><span class="normal-key-symbol">5</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="6^">
+          <div class="key-content">
+            <span class="normal-key-symbol">^</span
+            ><span class="normal-key-symbol">6</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="7&">
+          <div class="key-content">
+            <span class="normal-key-symbol">&</span
+            ><span class="normal-key-symbol">7</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="8*">
+          <div class="key-content">
+            <span class="normal-key-symbol">*</span
+            ><span class="normal-key-symbol">8</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="9(">
+          <div class="key-content">
+            <span class="normal-key-symbol">(</span
+            ><span class="normal-key-symbol">9</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="0)">
+          <div class="key-content">
+            <span class="normal-key-symbol">)</span
+            ><span class="normal-key-symbol">0</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="-_">
+          <div class="key-content">
+            <span class="normal-key-symbol">-</span
+            ><span class="normal-key-symbol">_</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="=+">
+          <div class="key-content">
+            <span class="normal-key-symbol">+</span
+            ><span class="normal-key-symbol">=</span>
+          </div>
+        </button>
+        <button class="key backspace" id="backspace">
+          <div class="key-content">
+            <span class="key-backspace key-symbol">&#8592</i></span>
+          </div>
+        </button>
+      </div>
+      <div class="row">
+        <button class="key tab">
+          <div class="key-content">
+            <span class="key-tab key-symbol">
+              &#8646
+            </span>
+          </div>
+        </button>
+        <button class="key normal-key" id="qQ">
+          <div class="key-content">
+            <span class="normal-key-symbol">Q</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="wW">
+          <div class="key-content">
+            <span class="normal-key-symbol">W</span>
+          </div>
+        </button>
+        <button class="key normal-key"  id="eE">
+          <div class="key-content">
+            <span class="normal-key-symbol">E</span>
+          </div>
+        </button>
+        <button class="key normal-key"  id="rR">
+          <div class="key-content">
+            <span class="normal-key-symbol">R</span>
+          </div>
+        </button>
+        <button class="key normal-key"  id="tT">
+          <div class="key-content">
+            <span class="normal-key-symbol">T</span>
+          </div>
+        </button>
+        <button class="key normal-key"  id="yY">
+          <div class="key-content">
+            <span class="normal-key-symbol">Y</span>
+          </div>
+        </button>
+        <button class="key normal-key"  id="uU">
+          <div class="key-content">
+            <span class="normal-key-symbol">U</span>
+          </div>
+        </button>
+        <button class="key normal-key"  id="iI">
+          <div class="key-content">
+            <span class="normal-key-symbol">I</span>
+          </div>
+        </button>
+        <button class="key normal-key"  id="oO">
+          <div class="key-content">
+            <span class="normal-key-symbol">O</span>
+          </div>
+        </button>
+        <button class="key normal-key"  id="pP">
+          <div class="key-content">
+            <span class="normal-key-symbol">P</span>
+          </div>
+        </button>
+        <button class="key normal-key"  id="{[">
+          <div class="key-content">
+            <span class="normal-key-symbol">{</span
+            ><span class="normal-key-symbol">[</span>
+          </div>
+        </button>
+        <button class="key normal-key"  id="}]">
+          <div class="key-content">
+            <span class="normal-key-symbol">}</span
+            ><span class="normal-key-symbol">]</span>
+          </div>
+        </button>
+        <button class="key normal-key last-row-two"  id="|\">
+          <div class="key-content">
+            <span class="normal-key-symbol">|</span
+            ><span class="normal-key-symbol">\</span>
+          </div>
+        </button>
+      </div>
+      <div class="row">
+        <button class="key caps-lock">
+          <div class="key-content key-middle"><span>Caps Lock</span></div>
+        </button>
+        <button class="key normal-key" id="aA">
+          <div class="key-content">
+            <span class="normal-key-symbol">A</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="sS">
+          <div class="key-content">
+            <span class="normal-key-symbol">S</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="dD">
+          <div class="key-content">
+            <span class="normal-key-symbol">D</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="fF">
+          <div class="key-content">
+            <span class="normal-key-symbol">F</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="gG">
+          <div class="key-content">
+            <span class="normal-key-symbol">G</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="hH">
+          <div class="key-content">
+            <span class="normal-key-symbol">H</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="jJ">
+          <div class="key-content">
+            <span class="normal-key-symbol">J</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="kK">
+          <div class="key-content">
+            <span class="normal-key-symbol">K</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="lL">
+          <div class="key-content">
+            <span class="normal-key-symbol">L</span>
+          </div>
+        </button>
+        <button class="key normal-key" id=":;">
+          <div class="key-content">
+            <span class="normal-key-symbol">:</span
+            ><span class="normal-key-symbol">;</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="¡'">
+          <div class="key-content">
+            <span class="normal-key-symbol">"</span
+            ><span class="normal-key-symbol">'</span>
+          </div>
+        </button>
+        <button class="key enter">
+          <div class="key-content key-enter"><span>Enter</span> <span class="key-symbol">&#8629</span></div>
+        </button>
+      </div>
+      <div class="row">
+        <button class="key shift" id="shift">
+          <div class="key-content shift"><span>Shift</span><span><i class="fa-solid fa-chevron-up"></i></span></div>
+        </button>
+        <button class="key normal-key" id="zZ">
+          <div class="key-content">
+            <span class="normal-key-symbol">Z</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="xX">
+          <div class="key-content">
+            <span class="normal-key-symbol">X</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="cC">
+          <div class="key-content">
+            <span class="normal-key-symbol">C</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="vV">
+          <div class="key-content">
+            <span class="normal-key-symbol">V</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="bB">
+          <div class="key-content">
+            <span class="normal-key-symbol">B</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="nN">
+          <div class="key-content">
+            <span class="normal-key-symbol">N</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="mM">
+          <div class="key-content">
+            <span class="normal-key-symbol">M</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="<,">
+          <div class="key-content">
+            <span class="normal-key-symbol"><</span
+            ><span class="normal-key-symbol">,</span>
+          </div>
+        </button>
+        <button class="key normal-key" id=">.">
+          <div class="key-content">
+            <span class="normal-key-symbol">></span
+            ><span class="normal-key-symbol">.</span>
+          </div>
+        </button>
+        <button class="key normal-key" id="?/">
+          <div class="key-content">
+            <span class="normal-key-symbol">?</span
+            ><span class="normal-key-symbol">/</span>
+          </div>
+        </button>
+        <button class="key shift" id="shift">
+          <div class="key-content shift"><span>Shift</span><span><i class="fa-solid fa-chevron-up"></i></span></div>
+        </button>
+      </div>
+      <div class="row">
+        <button class="key ctrl">
+          <div class="key-content key-middle"><span>Ctrl</span></div>
+        </button>
+        <button class="key normal-key">
+          <div class="key-content key-middle">
+            <span class="normal-key-symbol">Os</span>
+          </div>
+        </button>
+        <button class="key alt">
+          <div class="key-content key-middle"><span>Alt</span></div>
+        </button>
+        <button class="key space" id="  ">
+          <div class="key-content"><span>_____</span></div>
+        </button>
+        <button class="key alt">
+          <div class="key-content key-middle"><span>Alt</span></div>
+        </button>
+        <button class="key normal-key">
+          <div class="key-content key-middle">
+            <span class="normal-key-symbol">Os</span>
+          </div>
+        </button>
+        <button class="key normal-key">
+          <div class="key-content key-middle">
+            <span class="normal-key-symbol" id="fn">Fn</span>
+          </div> 
+        </button>
+        <button class="key ctrl">
+          <div class="key-content key-middle"><span>Ctrl</span></div>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.panel {
+  margin-bottom: 20px;
+}
+#panel_txt {
+  font-size: 3rem;
+}
+
+.keyboard {
+  border: 3px solid #000;
+  width: max-content;
+  padding: 10px;
+  padding-top: 16px;
+  padding-left: 13px;
+  background-color: #202020;
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.key {
+  font-size: 1.2rem;
+  position: relative;
+  height: 80px;
+  min-width: 80px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #282828, #202020);
+  box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(0, 0, 0, 0.75),
+    10px 20px 25px rgba(0, 0, 0, 0.4);
+  margin-bottom: 6px;
+  margin-right: 3px;
+}
+
+.normal-key {
+  width: 80px;
+}
+
+.key-content {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  bottom: 14px;
+  right: 12px;
+  background: linear-gradient(90deg, #232323, #4a4a4a);
+  border-radius: 10px;
+  border-left: 1px solid #0004;
+  border-bottom: 1px solid #0004;
+  border-top: 1px solid #0009;
+}
+
+.normal-key-symbol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+  margin-top: 3px;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.key.backspace {
+  width: 160px;
+}
+.key.tab,
+.key.last-row-two,
+.key.ctrl,
+.key.alt {
+  width: 120px;
+}
+.key.caps-lock {
+  width: 143.5px;
+}
+.key.enter {
+  width: 183.5px;
+}
+.key.shift {
+  width: 207px;
+}
+.key.space {
+  width: 522px;
+}
+.key-backspace {
+  width: 100px;
+}
+
+.key .key-symbol {
+  font-size: 2rem;
+}
+
+.key-content.shift,
+.key-content.key-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.key-content.shift span,
+.key-content.key-middle span {
+  margin-left: 10px;
+}
+
+.key-content.key-enter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.key-content.key-enter span {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.key-content.key-enter .key-symbol {
+  margin-top: 0;
+}
+
+.keyboard .key,
+.keyboard.white .key {
+  color: #fff;
+}
+
+.keyboard.red .key {
+  color: #f00;
+}
+
+.keyboard.blue .key {
+  color: #00f;
+}
+.keyboard.green .key {
+  color: #0f0;
+}
+.keyboard.yellow .key {
+  color: #ff0;
+}
+.keyboard.orange .key {
+  color: #f70;
+}
+.keyboard.violet .key {
+  color: #90f;
+}
+.keyboard.ligthblue .key {
+  color: #0ff;
+}
+.keyboard.rainbow .key {
+  animation: rainbow infinite 10s;
+}
+
+@keyframes rainbow {
+  0% {
+    color: #f00;
+  }
+  33.3% {
+    color: #0f0;
+  }
+  66.6% {
+    color: #00f;
+  }
+
+  100% {
+    color: #f00;
+  }
+}
+
+.key:active {
+  transition: 0.05s;
+  transform: scale(0.95);
+}
